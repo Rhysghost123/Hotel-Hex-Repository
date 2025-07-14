@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: fa11fcbb3693c42e0866a06daeebfe12
+guid: 1d609f24d4f004574897333092eb264f
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -48,7 +48,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 32
+  spritePixelsToUnits: 100
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -72,7 +72,7 @@ TextureImporter:
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 1
+    textureCompression: 2
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -110,64 +110,64 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: New Piskel_0
+      name: Cop_DownWard1
       rect:
         serializedVersion: 2
-        x: 8
-        y: 1
-        width: 15
-        height: 29
+        x: 0
+        y: 0
+        width: 32
+        height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 05f04bd2caca44d1d932fe07cffcea61
-      internalID: 933900449
+      spriteID: f130b2a5fe1a9491a86b728576dfdcf4
+      internalID: -411366423
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: New Piskel_1
+      name: Cop_DownWard2
       rect:
         serializedVersion: 2
-        x: 40
-        y: 1
-        width: 15
-        height: 29
+        x: 32
+        y: 0
+        width: 32
+        height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 731a9f4da331d439587f939a33fef3f7
-      internalID: -588401813
+      spriteID: 4245dfbd64de241acb4551ab626e7a5d
+      internalID: 2137975288
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: New Piskel_2
+      name: Cop_DownWard1_3
       rect:
         serializedVersion: 2
-        x: 72
-        y: 1
-        width: 15
-        height: 29
+        x: 64
+        y: 0
+        width: 32
+        height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 93666935540fc425dbb28f0d79f02f49
-      internalID: 1785425774
+      spriteID: 79f7bda0aef2c47889fac3da5413b965
+      internalID: 927231252
       vertices: []
       indices: 
       edges: []
@@ -183,9 +183,9 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      New Piskel_0: 933900449
-      New Piskel_1: -588401813
-      New Piskel_2: 1785425774
+      Cop_DownWard1: -411366423
+      Cop_DownWard1_3: 927231252
+      Cop_DownWard2: 2137975288
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
