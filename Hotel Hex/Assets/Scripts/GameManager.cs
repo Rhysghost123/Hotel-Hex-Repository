@@ -23,10 +23,16 @@ public class GameManager : MonoBehaviour
     }
     public string Mainroom = "Main room";
     public string mainmenu = "Main menu";
+    
+
+
+
+    //we do not need to define a load scene function when it already exists.
+
     // Update is called once per frame
-    public void LoadScene(string name)
-    {
-        SceneManager.LoadScene(name);
-    }
+    // public void LoadScene(string name)
+    // {
+    //    SceneManager.LoadScene(name);
+    // }
 
 }
