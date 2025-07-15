@@ -3,11 +3,13 @@ using System.Collections.Generic;
 using System.Numerics;
 using UnityEngine;
 
-public class PlayerController : MonoBehaviour
+public class PlayerController3D : MonoBehaviour
 {
 
     public float moveSpeed = 5f;
     public Rigidbody2D rb;
+
+    public static PlayerController3D instance;
 
     Animator anim;
 

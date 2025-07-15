@@ -30,7 +30,7 @@ public class Mimic : MonoBehaviour
 
             if (xCloseness < interactRng && yCloseness < interactRng)
             {
-                Vector2 dir = PlayerController.instance.transform.position - transform.position;
+                Vector2 dir = PlayerController3D.instance.transform.position - transform.position;
 
                 rb.velocity = dir.normalized * speed;
             }

@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: cbe97e50e575242d4a34040f99ec7705
+guid: 23fd0f5fd3d6e4557bb30f96078b4194
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -110,7 +110,7 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Cop_Jumping_0
+      name: Cop_runninganimation_0
       rect:
         serializedVersion: 2
         x: 0
@@ -124,8 +124,71 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 683401f3f95267370800000000000000
-      internalID: 8319878727501628294
+      spriteID: 1aa6c498d307f41548c6fd17cbf57c50
+      internalID: 1514839416
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cop_runninganimation_1
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 0
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d129b2c0e04be408582d7296412c4ebe
+      internalID: -685274846
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cop_runninganimation_2
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 0
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b0d56acb180664a8ab04b2979009bdec
+      internalID: -320147691
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cop_runninganimation_3
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 0
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 634500024b3764d8d8b458a9bdf3d73f
+      internalID: -796204904
       vertices: []
       indices: 
       edges: []
@@ -133,7 +196,7 @@ TextureImporter:
     outline: []
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: 5e97eb03825dee720800000000000000
     internalID: 0
     vertices: []
     indices: 
@@ -141,7 +204,10 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      Cop_Jumping_0: 8319878727501628294
+      Cop_runninganimation_0: 1514839416
+      Cop_runninganimation_1: -685274846
+      Cop_runninganimation_2: -320147691
+      Cop_runninganimation_3: -796204904
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
