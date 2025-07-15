@@ -1,0 +1,54 @@
+using System;
+using System.Collections;
+using System.Collections.Generic;
+using System.Numerics;
+using UnityEngine;
+using UnityEngine.SceneManagement;
+
+public class InteractivesHandler : MonoBehaviour
+{
+    public GameObject button; //here's the actual prefab of the button we will be instantiating
+    public GameObject buttonInstance; //here is the variable to store the instance of the prefab
+    public GameObject player; //yep, we need a reference to the player
+
+    UnityEngine.Vector2 playerPosition;
+    UnityEngine.Vector2 objectPosition;
+    public float interactRng; //the range from which the button prompt will appear
+
+    public int doorNumber = 0; //this is for doors only--it'll make it so that door 1 goes to lvl 1 and so forth. If the object isn't a door then this will just be 0
+
+
+
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+        buttonInstance = Instantiate(button, transform.position, transform.rotation);
+    }
+
+    void OnTriggerExit2D(Collider2D collision)
+    {
+        Destroy(buttonInstance);
+    }
+
+
+
+    // Start is called before the first frame update
+    void Start()
+    {
+
+    }
+
+    // Update is called once per frame
+    void Update()
+    {
+        playerPosition = player.GetComponent<Transform>().position;
+        objectPosition = GetComponent<Transform>().position;
+
+        float xCloseness = Math.Abs(playerPosition.x - objectPosition.x);
+        float yCloseness = Math.Abs(playerPosition.y - objectPosition.y);
+
+        if (xCloseness < interactRng && yCloseness < interactRng && Input.GetKeyDown(KeyCode.E))
+        {
+            SceneManager.LoadScene("Level " + doorNumber.ToString());
+        }
+    }
+}
