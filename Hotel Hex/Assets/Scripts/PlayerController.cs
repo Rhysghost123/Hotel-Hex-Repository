@@ -8,7 +8,7 @@ public class PlayerController : MonoBehaviour
 
     public float moveSpeed = 5f;
     public Rigidbody2D rb;
-
+    public static PlayerController instance;
     Animator anim;
 
 
@@ -19,6 +19,7 @@ public class PlayerController : MonoBehaviour
     {
         rb = GetComponent<Rigidbody2D>();
         anim = GetComponent<Animator>();
+        instance = this;
 
     }
 
@@ -40,8 +41,5 @@ public class PlayerController : MonoBehaviour
         }
         rb.velocity = rigidbodyDirection * moveSpeed;
     }
-    public void OnTriggerEnter2D(Collider2D key)
-    {
-        GameObject.Destroy(key.gameObject);
-    }
+    
 }
