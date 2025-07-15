@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: cbe97e50e575242d4a34040f99ec7705
+guid: 219d196a6e5bf4ec8a2f0b1fed405d8e
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -110,7 +110,7 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Cop_Jumping_0
+      name: Cop_fallinganimation_0
       rect:
         serializedVersion: 2
         x: 0
@@ -124,14 +124,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: f272b32368254486d9135b4a895ef3e5
-      internalID: 1684201620
+      spriteID: 54a66910cabe84ae89d24011d77358a7
+      internalID: 2025232480
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Cop_Jumping_1
+      name: Cop_fallinganimation_1
       rect:
         serializedVersion: 2
         x: 32
@@ -145,14 +145,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 01d388ee3bc8a4a0b98aa439a02bdc8b
-      internalID: -1381609626
+      spriteID: 3da6dfbfb52c34bb3987979fef062a93
+      internalID: 623044701
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Cop_Jumping_2
+      name: Cop_fallinganimation_2
       rect:
         serializedVersion: 2
         x: 64
@@ -166,50 +166,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 2772517f779cc4127a196715c158ba5c
-      internalID: 326261178
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Cop_Jumping_3
-      rect:
-        serializedVersion: 2
-        x: 96
-        y: 0
-        width: 32
-        height: 32
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 765efe918c13d480ab9b975f6988db31
-      internalID: 1818543391
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Cop_Jumping_4
-      rect:
-        serializedVersion: 2
-        x: 128
-        y: 0
-        width: 32
-        height: 32
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: d090ed25df92a46a8b644747d37a9b91
-      internalID: 584266097
+      spriteID: 236c1f45c923d4478b976d3a9d43c046
+      internalID: -437648457
       vertices: []
       indices: 
       edges: []
@@ -225,11 +183,9 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      Cop_Jumping_0: 1684201620
-      Cop_Jumping_1: -1381609626
-      Cop_Jumping_2: 326261178
-      Cop_Jumping_3: 1818543391
-      Cop_Jumping_4: 584266097
+      Cop_fallinganimation_0: 2025232480
+      Cop_fallinganimation_1: 623044701
+      Cop_fallinganimation_2: -437648457
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
