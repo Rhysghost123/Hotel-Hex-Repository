@@ -3,12 +3,16 @@ using System.Collections;
 using System.Collections.Generic;
 using System.Numerics;
 using UnityEngine;
+using UnityEngine.Rendering;
 using UnityEngine.SceneManagement;
 
 public class InteractivesHandler : MonoBehaviour
 {
     public GameObject button; //here's the actual prefab of the button we will be instantiating
+
+    public Camera cam;
     public GameObject buttonInstance; //here is the variable to store the instance of the prefab
+    public UnityEngine.Vector3 buttonOffset = new UnityEngine.Vector3(.5f, .5f, 0);
     public GameObject player; //yep, we need a reference to the player
 
     UnityEngine.Vector2 playerPosition;
@@ -22,6 +26,7 @@ public class InteractivesHandler : MonoBehaviour
     private void OnTriggerEnter2D(Collider2D collision)
     {
         buttonInstance = Instantiate(button, transform.position, transform.rotation);
+        buttonInstance.transform.GetChild(0).transform.position = cam.WorldToScreenPoint(transform.position) + buttonOffset;
     }
 
     void OnTriggerExit2D(Collider2D collision)
@@ -34,7 +39,7 @@ public class InteractivesHandler : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-
+        
     }
 
     // Update is called once per frame
