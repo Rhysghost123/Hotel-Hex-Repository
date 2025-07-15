@@ -1,5 +1,7 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
+using System.Numerics;
 using UnityEditor.Experimental.GraphView;
 using UnityEngine;
 
@@ -46,18 +48,31 @@ public class PlayerController2D : MonoBehaviour
             yVelocity = maxFallSpeed;
         }
 
-        anim.SetFloat("player2DHorizontalDirection", xVelocity);
+        anim.SetFloat("player2DHorizontalDirection", Math.Abs(xVelocity));
         anim.SetFloat("player2DVerticalDirection", yVelocity);
+
+
+        //make it so the jump animation only plays when the player presses jump
+        if (Input.GetKey(KeyCode.Space))
+        {
+            anim.SetBool("pressedJump", true);
+        }
+        else
+        {
+            anim.SetBool("pressedJump", false);
+        }
+        anim.SetBool("isGrounded", IsGrounded());
 
         if (horizontalInput > 0)
         {
-            transform.localScale = transform.localScale;
-        } else if (horizontalInput < 0)
+            transform.localScale = new UnityEngine.Vector3(Math.Abs(transform.localScale.x), transform.localScale.y, transform.localScale.z);
+        }
+        else if (horizontalInput < 0)
         {
-            transform.localScale = new Vector3(-transform.localScale.x, transform.localScale.y, transform.localScale.z);
+            transform.localScale = new UnityEngine.Vector3(-Math.Abs(transform.localScale.x), transform.localScale.y, transform.localScale.z);
         }
 
-        rb.velocity = new Vector2(xVelocity, yVelocity);
+        rb.velocity = new UnityEngine.Vector2(xVelocity, yVelocity);
 
     }
 
