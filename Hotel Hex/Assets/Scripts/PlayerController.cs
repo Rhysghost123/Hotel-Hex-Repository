@@ -19,7 +19,7 @@ public class PlayerController : MonoBehaviour
     {
         rb = GetComponent<Rigidbody2D>();
         anim = GetComponent<Animator>();
-        
+
     }
 
     // Update is called once per frame
@@ -33,10 +33,15 @@ public class PlayerController : MonoBehaviour
         UnityEngine.Vector2 rigidbodyDirection = new UnityEngine.Vector2(horizontalInput, verticalInput).normalized;
 
         //quickly make it so the animator understands when the player is moving in what direction
-        if (Time.timeScale != 0) { 
+        if (Time.timeScale != 0)
+        {
             anim.SetFloat("playerVerticalDirection", verticalInput);
-        anim.SetFloat("playerHorizontalDirection", horizontalInput);
-    }
+            anim.SetFloat("playerHorizontalDirection", horizontalInput);
+        }
         rb.velocity = rigidbodyDirection * moveSpeed;
+    }
+    public void OnTriggerEnter2D(Collider2D key)
+    {
+        GameObject.Destroy(key.gameObject);
     }
 }
