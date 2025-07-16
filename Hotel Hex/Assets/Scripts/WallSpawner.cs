@@ -28,7 +28,6 @@ public class WallSpawner : MonoBehaviour
 
         for (float i = 0; i < initialPosition + yRng; i += blockSize)
         {
-            print(i);
            GameObject newBlock = Instantiate(block, new UnityEngine.Vector2(transform.position.x, initialPosition), transform.rotation);
             newBlock.transform.position = new UnityEngine.Vector2(newBlock.transform.position.x, newBlock.transform.position.y - i);
         }
