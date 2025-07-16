@@ -41,3 +41,12 @@ TagManager:
   - name: Default
     uniqueID: 0
     locked: 0
+  - name: Background Tiles
+    uniqueID: 1671613853
+    locked: 0
+  - name: HUB Stuff
+    uniqueID: 2638001993
+    locked: 0
+  - name: Player
+    uniqueID: 4131075073
+    locked: 0
