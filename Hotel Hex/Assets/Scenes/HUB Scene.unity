@@ -2285,6 +2285,14 @@ PrefabInstance:
       value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 8917404879440515137, guid: a4490cd24163e374c8fd1a801f646b76, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 9
+      objectReference: {fileID: 0}
+    - target: {fileID: 8917404879440515137, guid: a4490cd24163e374c8fd1a801f646b76, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 9
+      objectReference: {fileID: 0}
+    - target: {fileID: 8917404879440515137, guid: a4490cd24163e374c8fd1a801f646b76, type: 3}
       propertyPath: m_LocalPosition.x
       value: 6
       objectReference: {fileID: 0}
@@ -2376,7 +2384,7 @@ MonoBehaviour:
   m_ComponentVersion: 1
   m_LightType: 3
   m_BlendStyleIndex: 0
-  m_FalloffIntensity: 0.5
+  m_FalloffIntensity: 0.559
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_Intensity: 1
   m_LightVolumeIntensity: 1
@@ -2400,7 +2408,7 @@ MonoBehaviour:
   m_PointLightInnerAngle: 360
   m_PointLightOuterAngle: 360
   m_PointLightInnerRadius: 0
-  m_PointLightOuterRadius: 2.22
+  m_PointLightOuterRadius: 6.14
   m_ShapeLightParametricSides: 5
   m_ShapeLightParametricAngleOffset: 0
   m_ShapeLightParametricRadius: 1
@@ -3625,7 +3633,7 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 2, y: 2, z: 2}
+  m_LocalScale: {x: 1.5, y: 1.5, z: 1.5}
   m_ConstrainProportionsScale: 1
   m_Children:
   - {fileID: 979637876}
@@ -3651,6 +3659,14 @@ PrefabInstance:
       propertyPath: player
       value: 
       objectReference: {fileID: 1866209694}
+    - target: {fileID: 8917404879440515137, guid: a4490cd24163e374c8fd1a801f646b76, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 9
+      objectReference: {fileID: 0}
+    - target: {fileID: 8917404879440515137, guid: a4490cd24163e374c8fd1a801f646b76, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 9
+      objectReference: {fileID: 0}
     - target: {fileID: 8917404879440515137, guid: a4490cd24163e374c8fd1a801f646b76, type: 3}
       propertyPath: m_LocalPosition.x
       value: -6
