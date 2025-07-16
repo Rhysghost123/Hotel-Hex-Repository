@@ -1547,6 +1547,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   player: {fileID: 1866209694}
+  animator: {fileID: 1750610139}
   interactRng: 3
   speed: 1.5
 --- !u!50 &1750610135
