@@ -36,7 +36,10 @@ public class DoorScript : MonoBehaviour
 
     void OnTriggerExit2D(Collider2D collision)
     {
-        Destroy(buttonInstance);
+        if (collision.CompareTag("Player"))
+        {
+            Destroy(buttonInstance);
+        }
     }
 
 
