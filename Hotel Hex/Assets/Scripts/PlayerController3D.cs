@@ -21,7 +21,7 @@ public class PlayerController3D : MonoBehaviour
     {
         rb = GetComponent<Rigidbody2D>();
         anim = GetComponent<Animator>();
-        
+        instance = this;
     }
 
     // Update is called once per frame

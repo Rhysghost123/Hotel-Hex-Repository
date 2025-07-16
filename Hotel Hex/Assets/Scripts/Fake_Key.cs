@@ -30,7 +30,7 @@ public class Mimic : MonoBehaviour
 
             if (xCloseness < interactRng && yCloseness < interactRng)
             {
-                Vector2 dir = PlayerController3D.instance.transform.position - transform.position;
+                Vector2 dir = playerPosition - objectPosition;
 
                 rb.velocity = dir.normalized * speed;
             }
@@ -38,6 +38,10 @@ public class Mimic : MonoBehaviour
     }
     public void OnTriggerEnter2D(Collider2D Player)
     {
-        GameObject.Destroy(Player.gameObject);
+        if (Player.CompareTag("Player"))
+        {
+            SceneManager.LoadScene(SceneManager.GetActiveScene().name);
+        }
+        
     }
 }
