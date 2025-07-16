@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using System.Numerics;
@@ -35,9 +36,12 @@ public class PlayerController3D : MonoBehaviour
         UnityEngine.Vector2 rigidbodyDirection = new UnityEngine.Vector2(horizontalInput, verticalInput).normalized;
 
         //quickly make it so the animator understands when the player is moving in what direction
-        if (Time.timeScale != 0) { 
+        if (Time.timeScale != 0)
+        {
             anim.SetFloat("playerVerticalDirection", verticalInput);
-        anim.SetFloat("playerHorizontalDirection", horizontalInput);
+            anim.SetFloat("playerHorizontalDirection", horizontalInput);
+            anim.SetFloat("playerSideMovement", Math.Abs(horizontalInput));
+            anim.SetFloat("playerVerticalMovement", Math.Abs(verticalInput));
     }
         rb.velocity = rigidbodyDirection * moveSpeed;
     }

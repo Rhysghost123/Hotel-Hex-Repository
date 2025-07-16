@@ -6,7 +6,7 @@ using UnityEngine;
 using UnityEngine.Rendering;
 using UnityEngine.SceneManagement;
 
-public class InteractivesHandler : MonoBehaviour
+public class DoorScript : MonoBehaviour
 {
     public GameObject button; //here's the actual prefab of the button we will be instantiating
 
@@ -19,14 +19,19 @@ public class InteractivesHandler : MonoBehaviour
     UnityEngine.Vector2 objectPosition;
     public float interactRng; //the range from which the button prompt will appear
 
-    public int doorNumber = 0; //this is for doors only--it'll make it so that door 1 goes to lvl 1 and so forth. If the object isn't a door then this will just be 0
+    public int doorNumber = 0; //this is for doors only--it'll make it so that door 1 goes to lvl 1 and so forth. If the object is an escape door then it's 0
 
 
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        buttonInstance = Instantiate(button, transform.position, transform.rotation);
+        print("player went near the door!");
+
+        if (collision.CompareTag("Player"))
+        {
+            buttonInstance = Instantiate(button, transform.position, transform.rotation);
         buttonInstance.transform.GetChild(0).transform.position = cam.WorldToScreenPoint(transform.position) + buttonOffset;
+        }
     }
 
     void OnTriggerExit2D(Collider2D collision)
@@ -51,9 +56,13 @@ public class InteractivesHandler : MonoBehaviour
         float xCloseness = Math.Abs(playerPosition.x - objectPosition.x); //
         float yCloseness = Math.Abs(playerPosition.y - objectPosition.y);
 
-        if (xCloseness < interactRng && yCloseness < interactRng && Input.GetKeyDown(KeyCode.E))
+        if (xCloseness < interactRng && yCloseness < interactRng && Input.GetKeyDown(KeyCode.E) && doorNumber > 0)
         {
             SceneManager.LoadScene("Level " + doorNumber.ToString());
+        }
+        else if (xCloseness < interactRng && yCloseness < interactRng && Input.GetKeyDown(KeyCode.E) && doorNumber == 0)
+        {
+            SceneManager.LoadScene("HUB Scene");
         }
     }
 }

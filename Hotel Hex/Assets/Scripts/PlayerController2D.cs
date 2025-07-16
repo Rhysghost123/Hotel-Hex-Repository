@@ -114,6 +114,7 @@ public class PlayerController2D : MonoBehaviour
 
     IEnumerator Dash(UnityEngine.Vector2 direction, float magnitude)
     {
+        anim.Play("PlayerDash2D");
         isDashing = true;
         rb.gravityScale = 0;
         UnityEngine.Vector2 originalVelocity = rb.velocity;
