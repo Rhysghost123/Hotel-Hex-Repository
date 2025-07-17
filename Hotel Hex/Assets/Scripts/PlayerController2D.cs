@@ -16,7 +16,7 @@ public class PlayerController2D : MonoBehaviour
     public Transform groundChecker;
     public LayerMask ground;
     public float groundCheckerRadius = .2f;
-
+    public bool playerisalive = true;
     public float jumpVelocity = 5f;
     public float maxFallSpeed = -15f;
 
