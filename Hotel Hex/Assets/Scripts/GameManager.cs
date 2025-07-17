@@ -6,6 +6,12 @@ using UnityEngine.SceneManagement;
 public class GameManager : MonoBehaviour
 {
     public static GameManager instance;
+
+    public int worldScore = 0;
+
+
+
+
     // Start is called before the first frame update
     void Start()
     {
@@ -20,10 +26,13 @@ public class GameManager : MonoBehaviour
             Destroy(gameObject);
         }
 
+        //differentiate between different scenes the gamemanager is in
+
+
     }
     public string Mainroom = "Main room";
     public string mainmenu = "Main menu";
-    
+
 
 
 
@@ -34,5 +43,9 @@ public class GameManager : MonoBehaviour
     // {
     //    SceneManager.LoadScene(name);
     // }
+
+
+
+
 
 }
