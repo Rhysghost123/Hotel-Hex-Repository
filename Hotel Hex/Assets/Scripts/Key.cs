@@ -7,12 +7,17 @@ public class Key : MonoBehaviour
 
     public KeyTracker keyTracker;
 
+    public int index;
+
 
 
     // Start is called before the first frame update
-    void Start()
+    void Awake()
     {
-        
+        if (GameManager.instance.iskeyCollected[index])
+        {
+            Destroy(gameObject);
+        }
     }
 
     // Update is called once per frame
@@ -21,7 +26,7 @@ public class Key : MonoBehaviour
         GameObject.Destroy(gameObject);
         keyTracker.numberofKeysInLevel++;
         print(keyTracker.numberofKeysInLevel);
-
+        GameManager.instance.iskeyCollected[index] = true;
     }
 }
 
