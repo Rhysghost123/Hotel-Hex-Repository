@@ -9,6 +9,8 @@ public class TotaKeys : MonoBehaviour
 
     TMPro.TMP_Text progressText;
 
+    public int index;
+
 
 
 
@@ -16,11 +18,30 @@ public class TotaKeys : MonoBehaviour
     void Start()
     {
         progressText = GetComponent<TMPro.TMP_Text>();
+
+        switch (index)
+        {
+            case 0:
+                progressText.text = "Total Keys Accquired: " + GameManager.instance.worldScore.ToString() + "/20";
+                break;
+
+            case 1:
+                progressText.text = "Keys Accquired: " + GameManager.instance.leveloneScore.ToString() + "/10";
+                break;
+
+            case 2:
+                progressText.text = "Total Keys Accquired: " + GameManager.instance.leveltwoScore.ToString() + "/10";
+                break;
+
+            default:
+                break;
+        }
+
     }
 
     // Update is called once per frame
     void Update()
     {
-        progressText.text = "Total Keys Accquired: " + GameManager.instance.worldScore.ToString() + "/10";
+
     }
 }

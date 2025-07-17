@@ -69,6 +69,16 @@ public class DoorScript : MonoBehaviour
         {
             SceneManager.LoadScene("HUB Scene");
             GameManager.instance.worldScore += keyTracker.numberofKeysInLevel;
+
+            if (SceneManager.GetActiveScene().name == "Level 1")
+            {
+                GameManager.instance.leveloneScore += keyTracker.numberofKeysInLevel;
+            }
+            else if (SceneManager.GetActiveScene().name == "Level 2")
+            {
+                GameManager.instance.leveltwoScore += keyTracker.numberofKeysInLevel;
+            }
+
             print(GameManager.instance.worldScore);
         }
     }
