@@ -20,4 +20,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Level 1.unity
     guid: 97b024a77d0b54e2c8b37769dc27be9e
+  - enabled: 0
+    path: Assets/Scenes/MILOS BASEMENT.unity
+    guid: 87ac0a0322ce26f4fbf9ac2eda90ac35
   m_configObjects: {}

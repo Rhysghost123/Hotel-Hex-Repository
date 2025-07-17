@@ -48,7 +48,7 @@ public class Mimic : MonoBehaviour
     {
         if (Player.CompareTag("Player"))
         {
-            SceneManager.LoadScene(SceneManager.GetActiveScene().name);
+            //SceneManager.LoadScene(SceneManager.GetActiveScene().name);
         }
         
     }
