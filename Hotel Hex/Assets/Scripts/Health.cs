@@ -16,10 +16,16 @@ public class Health : MonoBehaviour
     }
 
     // Update is called once per frame
-    public void OnTriggerEnter2D(Collider2D enemy)
+    public void OnTriggerEnter2D(Collider2D other)
     {
-        minhealth -= 1;
-        print("player took Damage!");
+        if (other.CompareTag("Enemy")) {
+            minhealth -= 1;
+            print("player took Damage!");
+        }
+        if(other.CompareTag("Insta Death"))
+            {
+            minhealth -= 3;
+        }
     }
     private void Update()
     {
