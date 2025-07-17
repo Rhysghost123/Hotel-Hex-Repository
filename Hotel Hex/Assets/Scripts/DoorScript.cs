@@ -21,6 +21,8 @@ public class DoorScript : MonoBehaviour
 
     public int doorNumber = 0; //this is for doors only--it'll make it so that door 1 goes to lvl 1 and so forth. If the object is an escape door then it's 0
 
+    public KeyTracker keyTracker;
+
 
 
     private void OnTriggerEnter2D(Collider2D collision)
@@ -30,13 +32,16 @@ public class DoorScript : MonoBehaviour
         if (collision.CompareTag("Player"))
         {
             buttonInstance = Instantiate(button, transform.position, transform.rotation);
-        buttonInstance.transform.GetChild(0).transform.position = cam.WorldToScreenPoint(transform.position) + buttonOffset;
+            buttonInstance.transform.GetChild(0).transform.position = cam.WorldToScreenPoint(transform.position) + buttonOffset;
         }
     }
 
     void OnTriggerExit2D(Collider2D collision)
     {
-        Destroy(buttonInstance);
+        if (collision.CompareTag("Player"))
+        {
+            Destroy(buttonInstance);
+        }
     }
 
 
@@ -63,6 +68,8 @@ public class DoorScript : MonoBehaviour
         else if (xCloseness < interactRng && yCloseness < interactRng && Input.GetKeyDown(KeyCode.E) && doorNumber == 0)
         {
             SceneManager.LoadScene("HUB Scene");
+            GameManager.instance.worldScore += keyTracker.numberofKeysInLevel;
+            print(GameManager.instance.worldScore);
         }
     }
 }
