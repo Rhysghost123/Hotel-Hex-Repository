@@ -23,6 +23,8 @@ public class DoorScript : MonoBehaviour
 
     public KeyTracker keyTracker;
 
+    public bool isTutorialdoor;
+
 
 
     private void OnTriggerEnter2D(Collider2D collision)
@@ -67,8 +69,16 @@ public class DoorScript : MonoBehaviour
         }
         else if (xCloseness < interactRng && yCloseness < interactRng && Input.GetKeyDown(KeyCode.E) && doorNumber == 0)
         {
-            SceneManager.LoadScene("HUB Scene");
+
+            if (isTutorialdoor)
+            {
+                SceneManager.LoadScene("HUB Scene");
+            }
+            else
+            {
+                SceneManager.LoadScene("HUB Scene");
             GameManager.instance.worldScore += keyTracker.numberofKeysInLevel;
+            }
 
             if (SceneManager.GetActiveScene().name == "Level 1")
             {
