@@ -764,6 +764,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 3200093670529783440, guid: cb40df63c5ef5a448a1db2fb121499ff, type: 3}
+      propertyPath: keyTracker
+      value: 
+      objectReference: {fileID: 528894966}
     - target: {fileID: 7459811297480606638, guid: cb40df63c5ef5a448a1db2fb121499ff, type: 3}
       propertyPath: m_Name
       value: Key (4)
@@ -772,6 +776,14 @@ PrefabInstance:
       propertyPath: keyTracker
       value: 
       objectReference: {fileID: 528894966}
+    - target: {fileID: 8227644366286415863, guid: cb40df63c5ef5a448a1db2fb121499ff, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 3.19
+      objectReference: {fileID: 0}
+    - target: {fileID: 8227644366286415863, guid: cb40df63c5ef5a448a1db2fb121499ff, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 1.63
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -1190,6 +1202,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 3200093670529783440, guid: cb40df63c5ef5a448a1db2fb121499ff, type: 3}
+      propertyPath: keyTracker
+      value: 
+      objectReference: {fileID: 528894966}
     - target: {fileID: 7459811297480606638, guid: cb40df63c5ef5a448a1db2fb121499ff, type: 3}
       propertyPath: m_Name
       value: Key (3)
@@ -1198,6 +1214,14 @@ PrefabInstance:
       propertyPath: keyTracker
       value: 
       objectReference: {fileID: 528894966}
+    - target: {fileID: 8227644366286415863, guid: cb40df63c5ef5a448a1db2fb121499ff, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 12.42
+      objectReference: {fileID: 0}
+    - target: {fileID: 8227644366286415863, guid: cb40df63c5ef5a448a1db2fb121499ff, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 2.12
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -2483,6 +2507,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 3200093670529783440, guid: cb40df63c5ef5a448a1db2fb121499ff, type: 3}
+      propertyPath: keyTracker
+      value: 
+      objectReference: {fileID: 528894966}
     - target: {fileID: 7459811297480606638, guid: cb40df63c5ef5a448a1db2fb121499ff, type: 3}
       propertyPath: m_Name
       value: Key (1)
@@ -2491,6 +2519,14 @@ PrefabInstance:
       propertyPath: keyTracker
       value: 
       objectReference: {fileID: 528894966}
+    - target: {fileID: 8227644366286415863, guid: cb40df63c5ef5a448a1db2fb121499ff, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 10.28
+      objectReference: {fileID: 0}
+    - target: {fileID: 8227644366286415863, guid: cb40df63c5ef5a448a1db2fb121499ff, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 1.86
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
