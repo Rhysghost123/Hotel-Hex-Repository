@@ -16,7 +16,7 @@ public class Key : MonoBehaviour
     }
 
     // Update is called once per frame
-    public void OnTriggerEnter2D(Collider2D pl)
+    public void OnTriggerEnter2D(Collider2D player)
     {
         GameObject.Destroy(gameObject);
         keyTracker.numberofKeysInLevel++;
