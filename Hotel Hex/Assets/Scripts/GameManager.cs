@@ -12,6 +12,8 @@ public class GameManager : MonoBehaviour
 
     public int leveltwoScore = 0;
 
+    public bool[] iskeyCollected = new bool[6];
+
 
 
 
