@@ -778,11 +778,11 @@ PrefabInstance:
       objectReference: {fileID: 528894966}
     - target: {fileID: 8227644366286415863, guid: cb40df63c5ef5a448a1db2fb121499ff, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 3.19
+      value: 149.5
       objectReference: {fileID: 0}
     - target: {fileID: 8227644366286415863, guid: cb40df63c5ef5a448a1db2fb121499ff, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 1.63
+      value: 46.1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -1216,11 +1216,11 @@ PrefabInstance:
       objectReference: {fileID: 528894966}
     - target: {fileID: 8227644366286415863, guid: cb40df63c5ef5a448a1db2fb121499ff, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 12.42
+      value: 123.1
       objectReference: {fileID: 0}
     - target: {fileID: 8227644366286415863, guid: cb40df63c5ef5a448a1db2fb121499ff, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 2.12
+      value: -4.8
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -2521,11 +2521,11 @@ PrefabInstance:
       objectReference: {fileID: 528894966}
     - target: {fileID: 8227644366286415863, guid: cb40df63c5ef5a448a1db2fb121499ff, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 10.28
+      value: 178
       objectReference: {fileID: 0}
     - target: {fileID: 8227644366286415863, guid: cb40df63c5ef5a448a1db2fb121499ff, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 1.86
+      value: 32.3
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -10400,6 +10400,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   worldScore: 0
+  leveloneScore: 0
+  leveltwoScore: 0
   Mainroom: MainRoom
   mainmenu: mainmenu
 --- !u!4 &1873102167

@@ -8,6 +8,9 @@ public class GameManager : MonoBehaviour
     public static GameManager instance;
 
     public int worldScore = 0;
+    public int leveloneScore = 0;
+
+    public int leveltwoScore = 0;
 
 
 

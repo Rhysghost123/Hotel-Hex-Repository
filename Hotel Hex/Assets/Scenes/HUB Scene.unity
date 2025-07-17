@@ -2183,11 +2183,11 @@ PrefabInstance:
       objectReference: {fileID: 1094443656}
     - target: {fileID: -5720688049235556223, guid: f98ba1a971abdb14595d04c1149be1b9, type: 3}
       propertyPath: index
-      value: 1
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: -5720688049235556223, guid: f98ba1a971abdb14595d04c1149be1b9, type: 3}
       propertyPath: offset
-      value: 3
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: -5720688049235556223, guid: f98ba1a971abdb14595d04c1149be1b9, type: 3}
       propertyPath: doorUIisUnder
@@ -2196,6 +2196,10 @@ PrefabInstance:
     - target: {fileID: 1514629399568464146, guid: f98ba1a971abdb14595d04c1149be1b9, type: 3}
       propertyPath: m_text
       value: 'Keys Acquired: 0/10'
+      objectReference: {fileID: 0}
+    - target: {fileID: 2523709496630075457, guid: f98ba1a971abdb14595d04c1149be1b9, type: 3}
+      propertyPath: index
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 2645084054488980180, guid: f98ba1a971abdb14595d04c1149be1b9, type: 3}
       propertyPath: m_Name
@@ -2518,12 +2522,16 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -5720688049235556223, guid: f98ba1a971abdb14595d04c1149be1b9, type: 3}
       propertyPath: offset
-      value: 3
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: -5720688049235556223, guid: f98ba1a971abdb14595d04c1149be1b9, type: 3}
       propertyPath: doorUIisUnder
       value: 
       objectReference: {fileID: 560561795}
+    - target: {fileID: 2523709496630075457, guid: f98ba1a971abdb14595d04c1149be1b9, type: 3}
+      propertyPath: index
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 2645084054488980180, guid: f98ba1a971abdb14595d04c1149be1b9, type: 3}
       propertyPath: m_Name
       value: Door 1 UI
@@ -3608,6 +3616,7 @@ MonoBehaviour:
   keyCheck: 0
   dooropen: 0
   key: {fileID: 0}
+  amountofkeys: 3
 --- !u!1 &1866209694
 GameObject:
   m_ObjectHideFlags: 0
@@ -3824,6 +3833,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   worldScore: 0
+  leveloneScore: 0
+  leveltwoScore: 0
   Mainroom: MainRoom
   mainmenu: mainmenu
 --- !u!4 &2022595576
@@ -3926,6 +3937,10 @@ PrefabInstance:
       propertyPath: cam
       value: 
       objectReference: {fileID: 1094443656}
+    - target: {fileID: -5720688049235556223, guid: f98ba1a971abdb14595d04c1149be1b9, type: 3}
+      propertyPath: index
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: -5720688049235556223, guid: f98ba1a971abdb14595d04c1149be1b9, type: 3}
       propertyPath: offset
       value: 3
