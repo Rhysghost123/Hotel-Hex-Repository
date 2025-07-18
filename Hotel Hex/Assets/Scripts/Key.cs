@@ -22,7 +22,7 @@ public class Key : MonoBehaviour
 
         if (index != -1)
         {
-         if (GameManager.instance.iskeyCollected[index])
+         if (GameManager.instance.iskeyAttained[index])
         {
             Destroy(gameObject);
         }
@@ -47,7 +47,9 @@ public class Key : MonoBehaviour
             GameObject.Destroy(gameObject);
             keyTracker.numberofKeysInLevel++;
             print(keyTracker.numberofKeysInLevel);
+            print("a5");
             GameManager.instance.iskeyCollected[index] = true;
+            GameManager.instance.iskeyAttained[index] = false;
         }
     }
 }
