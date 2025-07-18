@@ -22,7 +22,7 @@ public class Key : MonoBehaviour
 
         if (index != -1)
         {
-         if (GameManager.instance.iskeyCollected[index])
+         if (GameManager.instance.iskeyAttained[index])
         {
             Destroy(gameObject);
         }
