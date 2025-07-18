@@ -39,6 +39,7 @@ public class Specialdoor : MonoBehaviour
         {
             print("You escaped");
             //SceneManager.loadScene("End");
+            SceneManager.LoadScene("WIN SCREEN");
         }
     }
 
