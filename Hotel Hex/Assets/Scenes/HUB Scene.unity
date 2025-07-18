@@ -3613,9 +3613,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5401fc28e68932643828089427aad914, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  keysNeeded: 9
+  keysNeeded: 7
   dooropen: 0
-  amountofkeys: 3
   player: {fileID: 1866209694}
   interactRng: 2
   button: {fileID: 5019286960442750399, guid: 6a0393a4d9ac07147b9de799b724bb28, type: 3}
@@ -3841,6 +3840,7 @@ MonoBehaviour:
   leveloneScore: 0
   leveltwoScore: 0
   iskeyCollected: 000000000000
+  iskeyAttained: 00000000000000
   Mainroom: MainRoom
   mainmenu: mainmenu
 --- !u!4 &2022595576

@@ -9,7 +9,7 @@ public class Specialdoor : MonoBehaviour
 {
     public int keysNeeded = 7;
     public bool dooropen = false;
-    public int amountofkeys;
+    int amountofkeys;
 
     public GameObject player;
     Vector2 playerPosition;
