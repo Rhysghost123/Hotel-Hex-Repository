@@ -83,13 +83,22 @@ public class DoorScript : MonoBehaviour
             if (SceneManager.GetActiveScene().name == "Level 1")
             {
                 GameManager.instance.leveloneScore += keyTracker.numberofKeysInLevel;
-                GameManager.instance.iskeyAttained = GameManager.instance.iskeyCollected;
+
+                for (int index = 0; index < GameManager.instance.iskeyAttained.Length; index++)
+                {
+                    GameManager.instance.iskeyAttained[index] = GameManager.instance.iskeyCollected[index];
+                }
+                print("a3");
                 GameManager.instance.iskeyCollected = new bool[7];
             }
             else if (SceneManager.GetActiveScene().name == "Level 2")
             {
                 GameManager.instance.leveltwoScore += keyTracker.numberofKeysInLevel;
-                GameManager.instance.iskeyAttained = GameManager.instance.iskeyCollected;
+                for (int index = 0; index < GameManager.instance.iskeyAttained.Length; index++)
+                {
+                    GameManager.instance.iskeyAttained[index] = GameManager.instance.iskeyCollected[index];
+                }
+                print("a4");
                 GameManager.instance.iskeyCollected = new bool[7];
             }
 

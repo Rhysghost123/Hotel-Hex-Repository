@@ -7,7 +7,7 @@ using UnityEngine.UI;
 
 public class Specialdoor : MonoBehaviour
 {
-    public int keysNeeded = 9;
+    public int keysNeeded = 7;
     public bool dooropen = false;
     public int amountofkeys;
 
