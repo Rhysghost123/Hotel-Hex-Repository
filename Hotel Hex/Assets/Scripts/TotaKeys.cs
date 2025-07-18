@@ -22,7 +22,7 @@ public class TotaKeys : MonoBehaviour
         switch (index)
         {
             case 0:
-                progressText.text = "Total Keys Acquired: " + GameManager.instance.worldScore.ToString() + "/9";
+                progressText.text = "Total Keys Acquired: " + GameManager.instance.worldScore.ToString() + "/7";
                 break;
 
             case 1:
@@ -30,7 +30,7 @@ public class TotaKeys : MonoBehaviour
                 break;
 
             case 2:
-                progressText.text = "Keys Acquired: " + GameManager.instance.leveltwoScore.ToString() + "/6";
+                progressText.text = "Keys Acquired: " + GameManager.instance.leveltwoScore.ToString() + "/4";
                 break;
 
             default:
