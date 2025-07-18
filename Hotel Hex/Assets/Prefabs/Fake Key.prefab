@@ -172,7 +172,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5d8dde83beb4e8847a02072f68fe6a63, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  player: {fileID: 0}
+  player: {fileID: 7600211958820040417, guid: 10c5a7e8c324cca46b2f7d5ef5a16577, type: 3}
   animator: {fileID: 2187676348230005234}
   interactRng: 3
   speed: 1.5
