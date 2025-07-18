@@ -13,9 +13,9 @@ public class WallScript : MonoBehaviour
 
     void OnTriggerEnter2D(Collider2D player)
     {
-        if (player.CompareTag("Player"))
+        if (player.CompareTag("Player") && (SceneManager.GetActiveScene().name == "Level 2" || SceneManager.GetActiveScene().name == "Tutorial"))
         {
-            //SceneManager.LoadScene(SceneManager.GetActiveScene().name);
+            SceneManager.LoadScene(SceneManager.GetActiveScene().name);
         }
     }
 
