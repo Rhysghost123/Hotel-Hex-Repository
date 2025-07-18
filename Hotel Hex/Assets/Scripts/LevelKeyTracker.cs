@@ -18,7 +18,15 @@ public class KeyTracker : MonoBehaviour
     {
         texthandler = GetComponent<TMPro.TMP_Text>();
         totalnumberOfKeyObjects = GameObject.FindObjectsOfType(typeof(Key)).Length;
-        keysAlreadyCollected = GameManager.instance.leveloneScore;
+
+        if (SceneManager.GetActiveScene().name == "Level 1")
+        {
+            keysAlreadyCollected = GameManager.instance.leveloneScore;
+        }
+        else if (SceneManager.GetActiveScene().name == "Level 2")
+        {
+            keysAlreadyCollected = GameManager.instance.leveltwoScore;
+        }
     }
 
     // Update is called once per frame

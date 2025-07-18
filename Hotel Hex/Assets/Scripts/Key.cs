@@ -9,6 +9,8 @@ public class Key : MonoBehaviour
 
     public int index;
 
+
+
     public TMPro.TMP_Text tutorialRUN;
     public GameObject wallSpawner;
 
@@ -18,7 +20,7 @@ public class Key : MonoBehaviour
     void Awake()
     {
 
-        if (index != 8)
+        if (index != -1)
         {
          if (GameManager.instance.iskeyCollected[index])
         {
@@ -32,7 +34,7 @@ public class Key : MonoBehaviour
     public void OnTriggerEnter2D(Collider2D player)
     {
 
-        if (index == 8)
+        if (index == -1)
         {
             GameObject.Destroy(gameObject);
             tutorialRUN.gameObject.SetActive(true);

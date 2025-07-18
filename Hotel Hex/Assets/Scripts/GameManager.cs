@@ -12,7 +12,7 @@ public class GameManager : MonoBehaviour
 
     public int leveltwoScore = 0;
 
-    public bool[] iskeyCollected = new bool[6];
+    public bool[] iskeyCollected = new bool[9];
 
 
 
@@ -20,6 +20,7 @@ public class GameManager : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        print(iskeyCollected.Length);
         if (instance == null)
         {
 

@@ -3315,7 +3315,7 @@ MonoBehaviour:
   worldScore: 0
   leveloneScore: 0
   leveltwoScore: 0
-  iskeyCollected: 000000000000
+  iskeyCollected: 000000000000000000
   Mainroom: MainRoom
   mainmenu: mainmenu
 --- !u!4 &876732779

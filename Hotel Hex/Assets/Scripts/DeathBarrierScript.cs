@@ -20,7 +20,7 @@ public class DeathBarrierScript : MonoBehaviour
         if (collision.CompareTag("Player"))
         {
             Destroy(collision);
-            if (SceneManager.GetActiveScene().name == "Tutorial")
+            if (SceneManager.GetActiveScene().name == "Tutorial" || SceneManager.GetActiveScene().name == "Level 2")
             {
                 SceneManager.LoadScene(SceneManager.GetActiveScene().name);
             }
