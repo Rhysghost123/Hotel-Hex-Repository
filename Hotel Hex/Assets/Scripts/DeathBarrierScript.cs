@@ -22,7 +22,7 @@ public class DeathBarrierScript : MonoBehaviour
             Destroy(collision);
             if (SceneManager.GetActiveScene().name == "Tutorial" || SceneManager.GetActiveScene().name == "Level 2")
             {
-                //SceneManager.LoadScene(SceneManager.GetActiveScene().name);
+                SceneManager.LoadScene(SceneManager.GetActiveScene().name);
             }
         
         }
