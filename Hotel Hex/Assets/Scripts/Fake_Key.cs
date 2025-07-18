@@ -12,6 +12,7 @@ public class Mimic : MonoBehaviour
     public Animator animator;
     public float interactRng;
     public float speed = 5;
+    public bool ischasing = false;
     Rigidbody2D rb;
     Animator anim;
     // Start is called before the first frame update
@@ -35,12 +36,17 @@ public class Mimic : MonoBehaviour
             if (xCloseness < interactRng && yCloseness < interactRng)
             {
                 Vector2 dir = playerPosition - objectPosition;
-
+                if (!ischasing)
+                {
+                    ischasing= true;
+                    GetComponent<AudioSource>().Play();
+                }
                 rb.velocity = dir.normalized * speed;
             }
             else
             {
                 rb.velocity = rb.velocity * 0;
+                ischasing = false;
             }
         }
     }
