@@ -15,7 +15,7 @@ public class WallScript : MonoBehaviour
     {
         if (player.CompareTag("Player") && (SceneManager.GetActiveScene().name == "Level 2" || SceneManager.GetActiveScene().name == "Tutorial"))
         {
-            SceneManager.LoadScene(SceneManager.GetActiveScene().name);
+            //SceneManager.LoadScene(SceneManager.GetActiveScene().name);
         }
     }
 
